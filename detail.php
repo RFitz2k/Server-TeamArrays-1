@@ -327,27 +327,24 @@ $members = [
 						    <div class="resume-section-content">
 							    <div class="resume-timeline position-relative">
 								    <article class="resume-timeline-item position-relative pb-5">
-									    
+									    <?php for($i=0;$i<count($members[$_GET['index']]['workExperience']); $i++) { ?>
 									    <div class="resume-timeline-item-header mb-2">
 										    <div class="d-flex flex-column flex-md-row">
-										        <h3 class="resume-position-title font-weight-bold mb-1">Lead Developer</h3>
-										        <div class="resume-company-name ms-auto">Startup Hub</div>
+										        <h3 class="resume-position-title font-weight-bold mb-1"><?= $members[$_GET['index']]['workExperience'][$i]['positionName'] ?></h3>
+										        <div class="resume-company-name ms-auto"><?= $members[$_GET['index']]['workExperience'][$i]['companyName'] ?></div>
 										    </div><!--//row-->
-										    <div class="resume-position-time">2023 - Present</div>
+										    <div class="resume-position-time"><?= $members[$_GET['index']]['workExperience'][$i]['time'] ?></div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
-										    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
+										    <p><?= $members[$_GET['index']]['workExperience'][$i]['role-description'] ?></p>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
 										    <ul class="list-inline">
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Angular</span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Python</span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">jQuery</span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Webpack</span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">HTML/SASS</span></li>
-											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">PostgresSQL</span></li>
+												<?php for($j=0;$j<count($members[$_GET['index']]['workExperience'][$i]['techUsed']); $j++) { ?>
+											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill"><?= $members[$_GET['index']]['workExperience'][$i]['techUsed'][$j] ?></span></li>
+												<?php } ?>
 										    </ul>
 									    </div><!--//resume-timeline-item-desc-->
-
+										<?php } ?>
 								    </article><!--//resume-timeline-item-->
 							    </div><!--//resume-timeline-->
 						    </div>
@@ -359,18 +356,22 @@ $members = [
 						    <div class="resume-section-content">
 						        <div class="resume-skill-item">
 							        <ul class="list-unstyled mb-4">
+										<?php for($i=0;$i<count($members[$_GET['index']]['skillsTools']); $i++) { ?>
 								        <li class="mb-2">
-								            <div class="resume-skill-name">Angular</div>
+								            <div class="resume-skill-name"><?= $members[$_GET['index']]['skillsTools'][$i] ?></div>
 									        <div class="progress resume-progress">
 											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 98%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
+										<?php }?>
 							        </ul>
 						        </div><!--//resume-skill-item-->
 						        <div class="resume-skill-item">
 						            <h4 class="resume-skills-cat font-weight-bold">Others</h4>
 						            <ul class="list-inline">
-							            <li class="list-inline-item"><span class="badge badge-light">DevOps</span></li>
+										<?php for($i=0; $i < count($members[$_GET['index']]['others']); $i++) { ?>
+							            <li class="list-inline-item"><span class="badge badge-light"><?= $members[$_GET['index']]['others'][$i] ?></span></li>
+										<?php } ?>
 						            </ul>
 						        </div><!--//resume-skill-item-->
 						    </div><!--resume-section-content-->
@@ -379,33 +380,39 @@ $members = [
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled">
+									<?php for($i=0; $i < count($members[$_GET['index']]['education']); $i++) { ?>
 								    <li class="mb-2">
-								        <div class="resume-degree font-weight-bold">MSc in Computer Science</div>
-								        <div class="resume-degree-org">University College London</div>
-								        <div class="resume-degree-time">2013 - 2014</div>
+								        <div class="resume-degree font-weight-bold"><?= $members[$_GET['index']]['education'][$i]['degree'] ?></div>
+								        <div class="resume-degree-org"><?= $members[$_GET['index']]['education'][$i]['college'] ?></div>
+								        <div class="resume-degree-time"><?= $members[$_GET['index']]['education'][$i]['time'] ?></div>
 								    </li>
+									<?php } ?>
 							    </ul>
 						    </div>
 					    </section><!--//education-section-->
+						<?php if($members[$_GET['index']]['awards'] != 'false') : ?>
 					    <section class="resume-section reference-section mb-5">
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Awards</h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled resume-awards-list">
 								    <li class="mb-2 ps-4 position-relative">
+										<?php for($i=0; $i < count($members[$_GET['index']]['awards']); $i++) { ?>
 								        <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
-								        <div class="resume-award-name">Award Name Lorem</div>
-								        <div class="resume-award-desc">Award desc goes here, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</div>
+								        <div class="resume-award-name"><?= $members[$_GET['index']]['awards'][$i]['awardName'] ?></div>
+								        <div class="resume-award-desc"><?= $members[$_GET['index']]['awards'][$i]['awardDesc'] ?></div>
+										<?php } ?>
 								    </li>
 							    </ul>
 						    </div>
 					    </section><!--//interests-section-->
+						<?php endif ?>
 					    <section class="resume-section language-section mb-5">
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Languages</h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled resume-lang-list">
-								    <li class="mb-2"><span class="resume-lang-name font-weight-bold">English</span> <small class="text-muted font-weight-normal">(Native)</small></li>
-								    <li class="mb-2 align-middle"><span class="resume-lang-name font-weight-bold">French</span> <small class="text-muted font-weight-normal">(Professional)</small></li>
-								    <li><span class="resume-lang-name font-weight-bold">Spanish</span> <small class="text-muted font-weight-normal">(Professional)</small></li>
+									<?php for($i=0; $i < count($members[$_GET['index']]['languages']); $i++) { ?>
+								    <li class="mb-2"><span class="resume-lang-name font-weight-bold"><?= $members[$_GET['index']]['languages'][$i]['language'] ?></span> <small class="text-muted font-weight-normal">(<?= $members[$_GET['index']]['languages'][$i]['proficiency'] ?>)</small></li>
+									<?php } ?>
 							    </ul>
 						    </div>
 					    </section><!--//language-section-->
@@ -413,9 +420,9 @@ $members = [
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
 						    <div class="resume-section-content">
 							    <ul class="list-unstyled">
-								    <li class="mb-1">Climbing</li>
-								    <li class="mb-1">Snowboarding</li>
-								    <li class="mb-1">Cooking</li>
+									<?php for($i=0; $i < count($members[$_GET['index']]['interests']); $i++) { ?>
+								    <li class="mb-1"><?= $members[$_GET['index']]['interests'][$i] ?></li>
+									<?php } ?>
 							    </ul>
 						    </div>
 					    </section><!--//interests-section-->
@@ -425,17 +432,18 @@ $members = [
 				<section class="resume-section experience-section mb-5">
 					<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Projects</h2>
 					<div class="row mt-4">
-					<!-- PUT LOOP HERE  -->
+					<?php for($i=0; $i < count($members[$_GET['index']]['projects']); $i++) { ?>
 						<div class="col-md-4">
 							<div class="card">
-								<img src="path-to-project-image1.jpg" alt="Project 1" class="card-img-top">
+								<img src="assets/images/<?= $members[$_GET['index']]['projects'][$i]['projectImage'] ?>" alt="<?= $members[$_GET['index']]['projects'][$i]['projectName'] ?>" class="card-img-top">
 								<div class="card-body">
-									<h5 class="card-title">Project 1</h5>
-									<p class="card-text">Brief description of Project 1.</p>
-									<a href="btn btn-outline-primary" href="#">Go to link</a>
+									<h5 class="card-title"><?= $members[$_GET['index']]['projects'][$i]['projectName'] ?></h5>
+									<p class="card-text"><?= $members[$_GET['index']]['projects'][$i]['projectDesc'] ?></p>
+									<a class="btn btn-outline-primary" href="<?= $members[$_GET['index']]['projects'][$i]['projectLink'] ?>">Go to link</a>
 								</div>
 							</div>
 						</div>
+					<?php } ?>
 					</div>
 				</section><!--//projects-section-->
 		    </div><!--//resume-body-->
