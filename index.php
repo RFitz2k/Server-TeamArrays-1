@@ -11,7 +11,7 @@
 		],
 		[
 			"name"=> "Riley Fitzgerald",
-			"role"=> ""
+			"role"=> "Cyber Security Major"
 		]
 	];
 ?>

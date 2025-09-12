@@ -175,79 +175,74 @@ $members = [
 	],
 	[
 		"name"=> "Riley Fitzgerald",
-		"role"=> "",
-		"email"=> "",
-		"phoneNumber"=> "",
-		"linkedIn"=> "",
-		"github"=> "",
-		"website"=> "",
-		"summary"=> "",
+		"role"=> "CyberSecurity Stuff",
+		"email"=> "Fitzgeralw1@mymail.nku.edu",
+		"phoneNumber"=> "513-111-7175",
+		"linkedIn"=> "riley-fitzgerald",
+		"github"=> "Rfitz2k",
+		"website"=> "N/A",
+		"summary"=> "Third year student recently tansferred to NKU majoring in Cybersecurity",
 		"workExperience" => [
 			[
-				"positionName"=> "",
-				"companyName"=> "",
-				"time"=> "",
+				"positionName"=> "Customer Assistant",
+				"companyName"=> "Overstock Guys",
+				"time"=> "Jan 2025-present",
 				"role-description"=> "",
 				"techUsed"=> [
-					"",
-					"",
-					""
+					"Boxcutter",
+					"Register",
+					"Tape"
 				]
 			],
 			[
-				"positionName"=> "",
-				"companyName"=> "",
-				"time"=> "",
-				"role-description"=> "",
+				"positionName"=> "Software Development Intern",
+				"companyName"=> "Medpace",
+				"time"=> "May 2023-Aug 2023",
+				"role-description"=> "Update and maintain internal web pages and tools",
 				"techUsed"=> [
-					"",
-					"",
-					""
+					"Angular",
+					"Github",
+					"Teams"
 				]
 			]
 		],
 		"skillsTools" => [
-			"",
-			"",
-			""
-		],
-		"others"=> [
-			"",
-			"",
-			""
+			"Python",
+			"HTML",
+			"Java",
+			"Github"
 		],
 		"education"=> [
 			[
-				"degree"=> "",
-				"college"=> "",
-				"time"=> ""
+				"degree"=> "Cybersecurity",
+				"college"=> "Northen Kentucky University",
+				"time"=> "Aug 2025-Present"
 			],
 			[
-				"degree"=> "",
-				"college"=> "",
-				"time"=> ""
+				"degree"=> "Cybersecurity",
+				"college"=> "University of Cincinnati",
+				"time"=> "Aug 2022-May 2025"
 			]
 		],
 		"awards"=> [
 			[
-				"awardName"=> "",
-				"awardDesc"=> ""
+				"awardName"=> "Xerox Innovation Aware",
+				"awardDesc"=> "given by the university of Rochester for students interested in IT"
 			]
 		],
 		"languages"=> [
-			"",
-			""
+			"English"
 		],
 		"interests"=> [
-			"",
-			"",
-			""
+			"Game modding",
+			"Electronics",
+			"Computers"
 		],
 		"projects"=> [
 			[
-				"projectName"=> "",
-				"projectDesc"=> "",
-				"projectLink"=> "",
+				"projectName"=> "N/a",
+				"projectDesc"=> "N/a",
+				"projectLink"=> "N/a",
 				"projectImage"=> ""
 			]
 		]
