@@ -157,7 +157,7 @@ $members = [
 				"projectName"=> "Simple Computer",
 				"projectDesc"=> "Application designed to showcase how a computer runs and interprets software.",
 				"projectLink"=> "https://github.com/JosephAGallucci/Gallucci-SimpleComp-archive",
-				"projectImage"=> ""
+				"projectImage"=> "false"
 			]
 		]
 	],
