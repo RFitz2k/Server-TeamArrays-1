@@ -96,79 +96,67 @@ $members = [
 	],
 	[
 		"name"=> "Joseph Gallucci",
-		"role"=> "",
-		"email"=> "",
-		"phoneNumber"=> "",
-		"linkedIn"=> "",
-		"github"=> "",
-		"website"=> "",
-		"summary"=> "",
+		"role"=> "Software Engineer",
+		"email"=> "josephagallucci38@gmail.com",
+		"phoneNumber"=> "317-7785-1545",
+		"linkedIn"=> "joseph-a-gallucci",
+		"github"=> "josephagallucci",
+		"website"=> "false",
+		"summary"=> "I am Joseph Gallucci, and I am a junior Applied Software Engineering Major at Northern Kentucky University. My current professional interests are software engineering, computer information systems, and general computer science.",
 		"workExperience" => [
 			[
-				"positionName"=> "",
-				"companyName"=> "",
-				"time"=> "",
-				"role-description"=> "",
+				"positionName"=> "Student Specialist",
+				"companyName"=> "FUEL NKU",
+				"time"=> "Feb. 2025 - Present",
+				"role-description"=> "Worked as a student specialist for FUEL NKU, where I greeted customers, worked check out, and stocked/inventoried items for the pantry. I also worked with their",
 				"techUsed"=> [
-					"",
-					"",
-					""
+					"PantrySoft"
 				]
 			],
 			[
-				"positionName"=> "",
-				"companyName"=> "",
-				"time"=> "",
-				"role-description"=> "",
+				"positionName"=> "Dishwasher",
+				"companyName"=> "Colonial Heights and Gardens",
+				"time"=> "June - Aug. 2023",
+				"role-description"=> "Worked in the kitchen of Colonial Heights and Gardens, washing dishes and doing other kitchen tasks, like sweeping, mopping, taking out trash.",
 				"techUsed"=> [
-					"",
-					"",
-					""
+					"N/A"
 				]
-			]
+			],
 		],
 		"skillsTools" => [
-			"",
-			"",
-			""
+			"Java",
+			"HTML/CSS",
+			"Javascript",
+			"C++"
 		],
 		"others"=> [
-			"",
-			"",
-			""
+			"Microsoft Office",
+			"Git/GitHub"
 		],
 		"education"=> [
 			[
-				"degree"=> "",
-				"college"=> "",
-				"time"=> ""
-			],
-			[
-				"degree"=> "",
-				"college"=> "",
-				"time"=> ""
+				"degree"=> "BS in Applied Software Engineering",
+				"college"=> "Northern Kentucky University",
+				"time"=> "2023-2027"
 			]
 		],
-		"awards"=> [
-			[
-				"awardName"=> "",
-				"awardDesc"=> ""
-			]
-		],
+		"awards"=> "false",
 		"languages"=> [
-			"",
-			""
+			[
+				"language"=>"English",
+				"proficiency"=>"Native"
+			]
 		],
 		"interests"=> [
-			"",
-			"",
-			""
+			"Computer Inner Workings",
+			"Playing Guitar/Bass",
+			"Video Games"
 		],
 		"projects"=> [
 			[
-				"projectName"=> "",
-				"projectDesc"=> "",
-				"projectLink"=> "",
+				"projectName"=> "Simple Computer",
+				"projectDesc"=> "Application designed to showcase how a computer runs and interprets software.",
+				"projectLink"=> "https://github.com/JosephAGallucci/Gallucci-SimpleComp-archive",
 				"projectImage"=> ""
 			]
 		]

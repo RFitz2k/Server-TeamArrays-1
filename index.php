@@ -7,7 +7,7 @@
 		],
 		[
 			"name"=> "Joseph Gallucci",
-			"role"=> ""
+			"role"=> "Software Developer"
 		],
 		[
 			"name"=> "Riley Fitzgerald",
